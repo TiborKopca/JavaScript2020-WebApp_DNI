@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Metadatos Web -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- HTML Meta Tags -->
+  <title>Plantilla</title>
+  <meta name="description" content="" />
+
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="" />
+  <meta itemprop="description" content="" />
+  <meta itemprop="image" content="http://" />
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="http://" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="http://" />
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SEAT" />
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:image" content="http://" />
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+
+  <!-- Nuestro Framework de CSS preferido, mi preferido es BULMA -->
+  <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css" />
+
+  <!-- Reset styles-->
+  <link rel="stylesheet" href="css/reset.css">
+
+  <!-- Nuestro CSS Compilado a través de SASS ó sin compilar solo CSS básico -->
+  <link rel="stylesheet" href="css/estilos.css" />
+
+
+</head>
+
+<body>
+  <header>
+  </header>
+
+  <main>
+
+
+    <section class="container" id="">
+      <!-- <div class="caja" id="name"></div>
+      <input type="button" class="btn" onclick="main()" value="otra funccion"> -->
+
+      <form action="">
+        <label>Entra los numeros de DNI (12345678X) o NIE (X1234567Y) :
+          <input type="text" id="inputValue" maxlength="9">
+        </label>
+
+        <div class="buttons">
+          <input type="button" class="btnCancel" value="Borrar Datos" id="borrar">
+          <input type="button" class="btnDo" value="Calcular Letra" id="evaluar">
+  
+        </div>
+        
+        <div class="result-box" id="resultBox">
+          <!-- <p></p> -->
+          <div id="result"></div>
+        </div>
+    </section>
+
+    <article>
+      <!--
+             *
+             * Bloque ARTICLE
+             *
+            -->
+    </article>
+
+  </main>
+
+  <footer>
+    <!--
+        *
+        * Bloque FOOTER
+        *
+        -->
+  </footer>
+
+  <!--Javascript-->
+  <script src="js/letraDNI.js?3"></script>
+</body>
+
+</html>
