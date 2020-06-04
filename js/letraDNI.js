@@ -6,6 +6,9 @@ Tiene que detectar al poner el nombre y el dni, si esa persona nos ha dado un dn
 Crear un Mockup, porque la aplicación es para la policía y tiene que quedar correcta visualmente y que la puedan
 entender sin problemas.
 44123456A
+TODO - Callback Function
+TODO - Execute functions by pressing enter
+
 2020 @ Tibor Kopca
 */
 'use strict'
@@ -63,8 +66,18 @@ function botonSubmit() {
 //EVENTS
 const evaluar = document.getElementById("evaluar");               
 const borrar = document.getElementById("borrar");
+const dataInput = document.getElementById('inputValue');
 evaluar.addEventListener("click", botonSubmit);                 //si presionamos boton evaluar, lanzamos botonSubmit-MAIN FUNCTION
 borrar.addEventListener("click", clearData);                    //si presionamos borrar datos => function clearData
+
+// //EVENT Trigger a Button Click on Enter
+// dataInput.addEventListener("keyup", function (event){             //Execute a function when the user releases a key on the keyboard
+//     if(event.keyCode === 13){                                   //Number 13 is the "Enter" key on the keyboard
+//     event.preventDefault();                                     //Cancel the default action, if needed
+//     document.getElementById("evaluar").click();                 //Trigger the button element with a click
+//     }                               
+// });
+
 
 //FUNCTION BORRAR INPUTBOX
 function clearData(){
